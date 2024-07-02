@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+body{
+    font-family: sans-serif;
+    margin: 0 10%;
+    background-color: black;
+    /* color: aliceblue; */
+}
+header{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Transition */
+.linkContent{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    border-radius: 5px;
+    transition: 1s;
+} 
+
+.linkContent li:hover{
+    background-color:rgb(12, 190, 12); 
+    transition: 1s;
+
+}
+header nav ul{ /* BARRA DE NAVEGADOR */
+    display: flex;
+    list-style: none;
+    width: 100%;
+    background-color:rgb(40, 39, 39);/* negro +clarito*/
+    flex-direction: row;
+    list-style: none;
+    border-radius: 5px;
+    padding: 50px 20px;
+    justify-content:space-around;
+    color: white;
+    margin-top: 0px;
+    
+    
+}
+/* header nav ul li{
+    padding: 10px 20px;
+    background-color: rgb(255, 170, 127);
+    
+} */ 
+.about{ /*TEXTO ABOUT ME*/
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+    
+}
+
+.about h1{
+    font-size: 3.5em;
+    color: rgb(12, 190, 12);
+    border-bottom: 800px;
+    padding-bottom: 100px;
+}
+.about-text{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    
+}
+.about img{
+    width: 450px; /* Ancho de la imagen */
+    height: auto; /* Altura automática */
+    border-radius: 50%; /* Bordes redondeados */
+    margin-top: 5px; /* Espacio encima de la imagen */
+    margin-left: 100px;
+}
+.proyectototal{ 
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(12, 190, 12); /* Color de fondo verde */
+    color: #000; /* Color del texto negro */
+    padding: 50px 20px; /* Espaciado interior */
+    text-align: center;
+    flex-direction: column;    
+}
+
+.mproyectos{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(12, 190, 12); /* Color de fondo verde */
+    color: #000; /* Color del texto negro */
+    padding: 50px 20px; /* Espaciado interior */
+    /*text-align: center; /* Texto centrado */
+    flex-wrap: wrap;
+    
+}
+/*IMAGENES PROYECTOS */
+.proyecto img{ 
+    width: 200px; /* Ancho de la imagen */
+    height: auto; /* Altura automática */
+    padding: 10px;
+}
+
+.proyecto{
+    background-color: rgb(40, 39, 39); /* Color de fondo del proyecto */
+    color: #fff; /* Color del texto */
+    margin: 20px auto; /* Espacio entre proyectos */
+    padding: 20px; /* Espaciado interior */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 300px; /* Ancho máximo */  
+}
+/* HABILIDADES */
+.habilidadesfondo{ /* Fondo de habilidades */
+    background-color:#000 ;
+    padding: 50px 50px;
+}
+.habilidadesf{ /*FONDO MARCO REDONDEADO*/
+    padding: 5% 30px;
+    color: rgb(12, 190, 12);
+    background-color:rgb(40, 39, 39); /* negro +clarito*/
+    border-radius: 5px;
+
+}
+/* HABILIDADES */
+.habilidadesf hfront{
+    padding: 2% 20px;
+}
+.front{ /* Texto Front*/
+    color: #fff;
+    padding: 20px 5px;
+      
+}
+.habilidades img{
+    width: 100px; /* Ancho de la imagen */
+    height: auto; /* Altura automática */
+    padding: 10px;
+
+}
+.back{
+    color: #fff;
+    padding: 20px 5px;
+}
+
+/* FORMULARIO DE CONTACTO */
+.mformulariocontacto{
+    color: white;
+    padding: 50px 20px;
+
+}
+
+/* FOOTER */ 
+footer{
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.imgfooter img{  /*IMAGEN FOOTER */
+    background-color: red;
+    padding: 10px 5px;
+    width: 28px; /* Ancho de la imagen */
+    height: auto; 
+    
+}
