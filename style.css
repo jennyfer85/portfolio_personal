@@ -120,14 +120,18 @@ header nav ul{ /* BARRA DE NAVEGADOR */
 }
 .habilidadesf{ /*FONDO MARCO REDONDEADO*/
     padding: 5% 30px;
-    color: rgb(12, 190, 12);
     background-color:rgb(40, 39, 39); /* negro +clarito*/
     border-radius: 5px;
+}
 
+.hfront{ /* TEXTO HABILIDADES */
+    color: aqua;
+    font-size: 25px;
 }
 /* HABILIDADES */
 .habilidadesf hfront{
     padding: 2% 20px;
+
 }
 .front{ /* Texto Front*/
     color: #fff;
