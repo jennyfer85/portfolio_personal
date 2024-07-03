@@ -7,7 +7,7 @@
 body{
     font-family: sans-serif;
     margin: 0 10%;
-    background-color: black;
+    background-color: rgb(246, 240, 240); /* FONDO BODY */ 
     /* color: aliceblue; */
 }
 header{
@@ -158,15 +158,38 @@ header nav ul{ /* BARRA DE NAVEGADOR */
 
 /* FOOTER */ 
 footer{
-    background-color: #111;
+    background-color: #892727;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
+    height: 50px;
+    margin: 5px;
+
 }
 .imgfooter img{  /*IMAGEN FOOTER */
-    background-color: red;
+    
+    background-color: rgb(19, 18, 18);
     padding: 10px 5px;
     width: 28px; /* Ancho de la imagen */
-    height: auto; 
+    height: auto;
+    margin-left: 1.8px;
+    float: right; /*Mover a la derecha */
+    display: flex;
+}
+.Contactame{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    
+    color: #892727; /* Título contacto */
+    font-size: 25px;
+
+
+}
+.mformulariocontacto{
+    display: flex;
+    color: black;/* Color recuadros */ 
+    font-size: 25px;
+    padding: 100px 50px;
     
 }
