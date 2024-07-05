@@ -7,8 +7,8 @@
 body{
     font-family: sans-serif;
     margin: 0 10%;
-    background-color: rgb(246, 240, 240); /* FONDO BODY */ 
-    /* color: aliceblue; */
+    background-color: #070707; /* FONDO  CAMBIAR COLOR A NEGRO*/
+    
 }
 header{
     width: 100%;
@@ -28,9 +28,11 @@ header{
 .linkContent li:hover{
     background-color:rgb(12, 190, 12); 
     transition: 1s;
+    padding: 10px;
 
 }
-header nav ul{ /* BARRA DE NAVEGADOR */
+/* BARRA DE NAVEGADOR */
+header nav ul{ 
     display: flex;
     list-style: none;
     width: 100%;
@@ -42,81 +44,113 @@ header nav ul{ /* BARRA DE NAVEGADOR */
     justify-content:space-around;
     color: white;
     margin-top: 0px;
-    
-    
 }
-/* header nav ul li{
-    padding: 10px 20px;
-    background-color: rgb(255, 170, 127);
-    
-} */ 
-.about{ /*TEXTO ABOUT ME*/
+.about-container{ /* CONTENEDOR ABOUT */
     display: flex;
     flex-direction: row;
     text-align: center;
-    padding: 100px 20px;
-    color: white;
+    width: 100%;
+    margin-bottom: 40px;
+    height:900px; /*Altura*/
     
 }
-
-.about h1{
-    font-size: 3.5em;
-    color: rgb(12, 190, 12);
-    border-bottom: 800px;
-    padding-bottom: 100px;
-}
-.about-text{
+.about{
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: center;
+    width: 60%;
     
 }
-.about img{
-    width: 450px; /* Ancho de la imagen */
-    height: auto; /* Altura automática */
-    border-radius: 50%; /* Bordes redondeados */
-    margin-top: 5px; /* Espacio encima de la imagen */
-    margin-left: 100px;
+.about h1{ /* TITULO PRINCIPAL ABOUT */
+    
+    font-size: 3.5em;
+    color: rgb(12, 190, 12);
+    border-bottom: 800px; /* PROBAR DESDE AQUÍ */
+    padding-bottom: 100px;
 }
-.proyectototal{ 
+.about p{ /* TEXTO ABOUT */
+    color: #892727; 
+    line-height: 30px; /*Altura de linea*/
+}
+    
+.aboutFotoPrincipal{  /* REVISAR */
     display: flex;
-    flex-direction: row;
-    background-color: rgb(12, 190, 12); /* Color de fondo verde */
-    color: #000; /* Color del texto negro */
-    padding: 50px 20px; /* Espaciado interior */
-    text-align: center;
-    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+    width: 40%; /* Ancho de la imagen */
+    height: auto; /* Altura automática */
+    flex: 1 1 300px; /* Crecimiento y encogimiento flexible con un tamaño base de 300px */
+    
+}
+/* ---- PROYECTOS ---- */
+
+.contenedorPrincipal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(20, 119, 73);
+    justify-content: center;
+    padding: 10px;  
+}
+.contenedorPrincipal h2{
+    font-size: 25px;
+    padding-top: 10%;
+    color: #892727;  /*Cambiar color de letra negra*/
 }
 
-.mproyectos{
+.containerProjects{
     display: flex;
-    flex-direction: row;
-    background-color: rgb(12, 190, 12); /* Color de fondo verde */
-    color: #000; /* Color del texto negro */
-    padding: 50px 20px; /* Espaciado interior */
-    /*text-align: center; /* Texto centrado */
-    flex-wrap: wrap;
+    margin: 1em;
+    justify-content: center;
+    gap:10px;
+    padding: 90px 0px; /* Espaciado interior */
+}
+.project{
+    background-color: hsl(0, 0%, 3%);
+    border-radius: 20px 20px 20px 20px; /* Bordes redondeados imagen */
     
 }
-/*IMAGENES PROYECTOS */
-.proyecto img{ 
-    width: 200px; /* Ancho de la imagen */
-    height: auto; /* Altura automática */
+.project img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
     padding: 10px;
+    border-radius: 20px 20px 20px 20px; /* Bordes redondeados imagen */
 }
 
-.proyecto{
-    background-color: rgb(40, 39, 39); /* Color de fondo del proyecto */
-    color: #fff; /* Color del texto */
-    margin: 20px auto; /* Espacio entre proyectos */
-    padding: 20px; /* Espaciado interior */
-    border-radius: 10px; /* Bordes redondeados */
-    max-width: 300px; /* Ancho máximo */  
+.project h3{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 20px; 
+    color: white;
+    line-height: 30px; /*Altura de linea*/
 }
+.project p{
+    display: flex;
+    justify-content: center;
+    line-height: 30px; /*Altura de linea*/
+    text-align: center;
+    color: aqua;
+    margin-bottom: 30px;
+    padding: 5px 10px;
+}
+.proyLogoGitlink img{
+    display: flex;
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px; /*margen-espacios*/
+    margin-left: 30px;
+    
+}
+
 /* HABILIDADES */
 .habilidadesfondo{ /* Fondo de habilidades */
     background-color:#000 ;
     padding: 50px 50px;
+    width: 100%;
+    
 }
 .habilidadesf{ /*FONDO MARCO REDONDEADO*/
     padding: 5% 30px;
@@ -127,6 +161,7 @@ header nav ul{ /* BARRA DE NAVEGADOR */
 .hfront{ /* TEXTO HABILIDADES */
     color: aqua;
     font-size: 25px;
+    
 }
 /* HABILIDADES */
 .habilidadesf hfront{
@@ -149,47 +184,81 @@ header nav ul{ /* BARRA DE NAVEGADOR */
     padding: 20px 5px;
 }
 
-/* FORMULARIO DE CONTACTO */
-.mformulariocontacto{
-    color: white;
-    padding: 50px 20px;
 
+
+/* FORMULARIO DE CONTACTO */
+
+.contactform{ /* ENCABEZADO FORMULARIO */
+    padding: 20px; /*/// REVISAR */
+    margin: 0 auto;
+    background-color: white;
+}
+.containercontact{
+    /*/// REVISAR PADDING DEL CONTENEDOR*/
+    padding: 100px 50px;
+    font-size: 25px;
+    background-color: white;
+}
+.contactform h2{ /*Estilo en la letra */
+    padding: 10px;
+    color: black;
+}
+.form input{ /*Elementos de entrada*/
+    padding: 30px 80px;
+    margin-bottom: 2em; /*Separción de los recuadrod */
+    background-color: aqua; /* CAMBIAR COLOR*/
+    border: none; /*sin bordes */
+    border-radius: 10px;
+    color: white; /*Color escritura*/
+}
+.form textarea{
+    display: flex;
+    height: 450px;
+    width: 750px;
+    padding: 30px 80px;
+    background-color: aqua; /* CAMBIAR COLOR*/
+    border: none;
+    border-radius: 10px;
+    color: white;
+    
+}
+/*Botón Enviar formulario*/
+.btnsubmit{ 
+    padding: 30px 40px;
+    margin: 20px;
+    margin-left: 2px;
+    background-color: aqua; /* CAMBIAR COLOR*/
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5); /*sombra al botón*/
+}
+
+.btnsubmit:hover{
+    background-color: white;
 }
 
 /* FOOTER */ 
-footer{
-    background-color: #892727;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    height: 50px;
-    margin: 5px;
-
-}
-.imgfooter img{  /*IMAGEN FOOTER */
-    
-    background-color: rgb(19, 18, 18);
-    padding: 10px 5px;
-    width: 28px; /* Ancho de la imagen */
-    height: auto;
-    margin-left: 1.8px;
-    float: right; /*Mover a la derecha */
-    display: flex;
-}
-.Contactame{
+.footer{
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
-    
-    color: #892727; /* Título contacto */
-    font-size: 25px;
-
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    float:inline-end;
+    height: 90px;
+    color:black; /* CAMBIAR COLOR*/
+    background-color: #892727; /* CAMBIAR COLOR*/
+}
+.footercontent h5{
+    font-size: 17px; /* tamaño de letra*/
 
 }
-.mformulariocontacto{
+.imgredsocial{  /*IMAGEN FOOTER */
     display: flex;
-    color: black;/* Color recuadros */ 
-    font-size: 25px;
-    padding: 100px 50px;
-    
+    width: 60px; /* Ancho de la imagen */
+    height: auto;
+    padding: 10px 5px;
+    /*margin-top: 10px;*/
+    cursor: pointer;
 }

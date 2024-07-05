@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio Jenny Tello </title>
+    <title>Portfolio Jenny Tello </title>
 
 </head>
 
@@ -23,61 +23,96 @@
         </nav>
     </header>
 
-    <!-- CONTENIDO ABOUT ME-->
-    <div class="about">
-        <div class="about-text">
-            <h1>Jenny Tello</h1>
+    <!-- ABOUT ME -->
+    <div class="about-container">
+        <div class="about">
+            <h1>Jenny Tello</h1> <!-- TITULO NOMBRE -->
             <p>Hola! Soy Jenny Tello,una desarrolladora web full stack junior apasionada por el desarrollo web y el
-                aprendizaje constante.</p>
-            <p>Con una base sóli da en JavaScript, HTML5 y CSS3, disfruto creando experiencias web atractivas y
-                funcionales.</p>
+                aprendizaje constante. Con una base sólida en JavaScript, HTML5 y CSS3, disfruto creando experiencias
+                web atractivas y funcionales.
+                Me considero una persona colaborativa y solidaria, siempre dispuesta a trabajar en equipo y a ayudar a
+                mis compañeros. Creo que la mejor manera de crecer profesionalmente es compartiendo conocimientos y
+                aprendiendo de los demás.
+            </p>
         </div>
-        <img src="asset/img/fotoJenny.webp" alt="fotoJenny">
+        <div class="aboutFotoPrincipal">
+            <img src="asset/img/fotoJenny.webp" alt="fotoJenny">
+        </div>
     </div>
 
     <!-- MIS PROYECTOS-->
-    <div class="proyectototal">
-        <h2>Mis Proyectos</h2>
-        <div class="mproyectos">
-            <div class="proyecto">
+     <!-- Contenedor principal para los proyectos -->
+    <div class="contenedorPrincipal">
+        <!-- Título principal -->
+         <div>
+            <h2>Mis Proyectos</h2>
+         </div>
+        
+        <div class="containerProjects"> <!-- CONTENECDOR-->
+
+            <!-- Cada proyecto está contenido en un div -->
+            <div class="project">
                 <img src="asset/img/LogoProyecto1.png" alt="ImagenPatita">
-                <h3>PATITA.COM</h3>
+                <h3>PATITA </h3>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum sagittis bibendum.
                     Ut mollis erat mauris, sit amet tempus eros rutrum at.
                     Sed vel ex vitae sapien malesuada accumsan id hendrerit diam.
                 </p>
-                <img src="asset/img/LogoGit1.png" alt="logogit">
+                <!-- Icono GitHub - LINK-->
+                <div class="proyLogoGitlink">
+                    <a href="https://es.wikipedia.org/wiki/GitHub">
+                        <img src="asset/img/LogoGit2.png" alt="LogoGit2"></a>
+                </div>
             </div>
-            <div class="proyecto">
+        
+            <div class="project">
                 <img src="asset/img/LogoProyecto2.png" alt="ImagenEnvios">
                 <h3>ENVÍOS EXPRESS</h3>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum sagittis bibendum.
                     Ut mollis erat mauris, sit amet tempus eros rutrum at.
                     Sed vel ex vitae sapien malesuada accumsan id hendrerit diam.
                 </p>
-                <img src="asset/img/LogoGit2.png" alt="LogoGit2">
+                <!-- Icono GitHub - LINK-->
+                <div class="proyLogoGitlink">
+                    <a href="https://es.wikipedia.org/wiki/GitHub">
+                        <img src="asset/img/LogoGit2.png" alt="LogoGit2"></a>
+                </div>
             </div>
-            <div class="proyecto">
+
+
+            <div class="project">
                 <img src="asset/img/LogoProyecto3.png" alt="ImagenBurgers">
                 <h3>JENNY BURGERS</h3>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum sagittis bibendum.
                     Ut mollis erat mauris, sit amet tempus eros rutrum at.
                     Sed vel ex vitae sapien malesuada accumsan id hendrerit diam.
                 </p>
-                <img src="asset/img/LogoGit3.png" alt="LogoGit3">
+                <!-- Icono GitHub - LINK-->
+                <div class="proyLogoGitlink">
+                    <a href="https://es.wikipedia.org/wiki/GitHub">
+                        <img src="asset/img/LogoGit3.png" alt="LogoGit3"></a>
+                </div>
             </div>
-            <div class="proyecto">
+
+
+            <div class="project">
                 <img src="asset/img/LogoProyecto4.png" alt="ImagenDev">
                 <h3>JENNY DEV</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fermentum sagittis bibendum.
                     Ut mollis erat mauris, sit amet tempus eros rutrum at.
                     Sed vel ex vitae sapien malesuada accumsan id hendrerit diam.
                 </p>
-                <img src="asset/img/LogoGit4.png" alt="LogoGit4">
+                <!-- Icono GitHub - LINK-->
+                <div class="proyLogoGitlink">
+                    <a href="https://es.wikipedia.org/wiki/GitHub">
+                        <img src="asset/img/LogoGit4.png" alt="LogoGit4"></a>
+                </div>
             </div>
         </div>
     </div>
-    <!-- HABILIDADES -->
+
+
+    <!-- ********* HABILIDADES  *************** -->
     <div class="habilidadesfondo">
         <div class="habilidadesf">
             <h2 class="hfront">Habilidades</h2>
@@ -95,48 +130,51 @@
                 <img src="asset/img/LogoJC.png" alt="JC">
                 <img src="asset/img/LogoExpress.png" alt="Expres">
                 <img src="asset/img/LogoSql.png" alt="msql">
-
-
             </div>
         </div>
 
     </div>
 
     <!-- FORMULARIO DE CONTACTO -->
-    <div class="mformulariocontacto">
-        <h2 class="Contactame">Contáctame</h2>
-        <form action="Nombre"> <!--  -->
-            <label for="usuario">Nombre:</label> <!--Nombre formulario-->
-            <input type="text" id="usuario" name="usuario">
-            <label for="email">Email</label>
-            <input type="text" id="usuario" name="usuario">
-            <br> 
-            <label for="titulo">Título:</label>
-            <br>
-            <input type="text" id="usuario" name="usuario">
-            <label for="mensaje">Mensaje:</label>
-            <input type="text" id="usuario" name="usuario">
-            <input type="submit" value="Enviar">
+    <div class="contactform">
+        <h2>Contáctame</h2> <!-- Cabecera formulario-->
     </div>
-    <!-- <div class="mformulariocontacto">
-        <h2>Contáctame</h2>
-        <div class="contactame">
+    </div>
+    <div class="containercontact"> <!-- CONTENEDOR DEL FORMULARIO REVISAR AQUÍ EL FORMULARIO -->
+        <form class="form"> <!-- action="nombre" -->
 
-        </div>-->
+            <input type="text" placeholder="Nombre:" required>
 
-    </form>
+            <input type="email" placeholder="Email:" required>
+            <br>
+
+            <input type="text" placeholder="Título:" required>
+            <br>
+            <!-- Mensaje -->
+            <textarea placeholder="Mensaje:" required></textarea>
+        </form>
+        <!-- Botón enviar -->
+        <button class="btnsubmit"> Enviar mensaje
+        </button>
+
+    </div>
+    </div>
     </div>
     <!-- FOOTER -->
-    <footer> <!-- IMAGEN FOOTER -->
-        <div class="imgfooter">
-            <img src="asset/img/🦆 icon _instagram alt icon_.png" alt="imgInstagram">
-            <img src="asset/img/🦆 icon _facebook fill icon_.png" alt="imgFace">
-            <img src="asset/img/🦆 icon _twitter icon_.png" alt="imgTwiter">
+    <footer class="footer">
+        <div class="footercontent">
+            <h5>Jenny Tello © 2024 | All Rights Reserved</h5>
         </div>
-        <p>&copy; 2024 Jenny Tello. Todos los derechos reservados.</p>
+        <!-- IMAGEN FOOTER -->
+        <div class="imgredsocial">
+            <a href="https://www.instagram.com/">
+                <img src="asset/img/🦆 icon _instagram alt icon_.png" alt="imgInstagram"></a>
+            <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_ES">
+                <img src="asset/img/🦆 icon _facebook fill icon_.png" alt="imgFace"></a>
+            <a href="https://x.com/i/flow/login">
+                <img src="asset/img/🦆 icon _twitter icon_.png" alt="imgTwiter"></a>
+
+        </div>
     </footer>
-
-
 </body>
-
 </html>
