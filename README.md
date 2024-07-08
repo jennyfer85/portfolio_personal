@@ -13,10 +13,5 @@ Este repositorio contiene mi portafolio personal, donde muestro proyectos, habil
 - Html: para estructurar el portfolio.
 - Css: para dar estilo a mi portfolio.
 
-## Contacto
-
-## Contacto
-
-- LinkedIn: Tu Perfil
 
 
